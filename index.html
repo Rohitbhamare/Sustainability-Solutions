@@ -108,26 +108,14 @@
 
     <!-- Header -->
     <header class="bg-white shadow-xl sticky top-0 z-50 transition-all duration-300" id="header">
-        <div class="container mx-auto px-4 py-4">
+        <div class="container mx-auto px-4 ">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center space-x-4">
-                    <div class="relative">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-brand-yellow to-brand-brown rounded-xl flex items-center justify-center shadow-lg">
-                            <span class="text-white font-bold text-2xl">SSI</span>
-                        </div>
-                        <div
-                            class="absolute -top-1 -right-1 w-6 h-6 bg-accent-green rounded-full flex items-center justify-center">
-                            <i class="fas fa-check text-white text-xs"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold gradient-text">Sustainability Solutions India</h1>
-                        <p class="text-sm text-gray-600 font-medium">Certification Excellence Since 2014</p>
-                    </div>
-                </div>
+                <div class="relative h-24 flex items-center">
+                    <img src="./logo.png" alt="Sustainability Solutions India Logo"
+                        class="h-28 w-auto object-contain" />
 
+                </div>
                 <!-- Navigation -->
                 <nav class="hidden lg:flex items-center space-x-8">
                     <a href="index.html"
@@ -173,169 +161,179 @@
 
     <!-- Hero Section -->
     <section
-        class="relative min-h-screen flex items-center bg-gradient-to-br from-brand-yellow-light via-white to-brand-brown-light overflow-hidden">
+        class="relative min-h-screen flex items-center bg-gradient-to-br from-brand-yellow-light via-white to-brand-brown-light overflow-hidden max-h-[95vh] sm:max-h-none overflow-y-auto">
+
         <!-- Background Elements -->
         <div class="absolute inset-0 opacity-10">
             <div
-                class="absolute top-20 left-10 w-72 h-72 bg-brand-yellow rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow">
+                class="absolute top-20 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-brand-yellow rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow">
             </div>
             <div
-                class="absolute top-40 right-10 w-72 h-72 bg-brand-brown rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-2000">
+                class="absolute top-40 right-10 w-48 h-48 sm:w-72 sm:h-72 bg-brand-brown rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-2000">
             </div>
             <div
-                class="absolute bottom-20 left-1/2 w-72 h-72 bg-accent-green rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-4000">
+                class="absolute bottom-20 left-1/2 w-48 h-48 sm:w-72 sm:h-72 bg-accent-green rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-4000">
             </div>
         </div>
 
         <div class="container mx-auto px-4 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
                 <div class="animate-fade-in-up">
                     <!-- Badge -->
-                    <div class="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-lg mb-5 mt-5">
-                        <span class="w-3 h-3 bg-accent-green rounded-full mr-3 animate-pulse"></span>
+                    <div
+                        class="inline-flex items-center bg-white rounded-full px-4 py-2 shadow mb-4 mt-4 text-sm sm:text-base">
+                        <span class="w-3 h-3 bg-accent-green rounded-full mr-2 animate-pulse"></span>
                         <span class="text-brand-brown font-semibold">India's #1 Sustainability Consultancy</span>
                     </div>
 
-                    <h2 class="text-6xl lg:text-7xl font-bold text-brand-brown-dark mb-8 leading-tight">
+                    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-brown-dark mb-6 leading-tight">
                         Transform Your Business with
                         <span class="gradient-text">Sustainable Certifications</span>
                     </h2>
 
-                    <p class="text-xl lg:text-2xl text-gray-700 mb-8 leading-relaxed">
+                    <p class="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 leading-relaxed">
                         Join 500+ textile chemical industries across India who trust us for GOTS, ZDHC, ISO, and REACH
-                        compliance.
-                        Achieve international sustainability standards with our proven expertise and 98% success rate.
+                        compliance. Achieve international sustainability standards with our proven expertise and 98%
+                        success
+                        rate.
                     </p>
 
                     <!-- Key Benefits -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center">
-                                <i class="fas fa-check text-white text-sm"></i>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <div
+                                class="w-6 h-6 sm:w-8 sm:h-8 bg-accent-green rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-white text-xs sm:text-sm"></i>
                             </div>
-                            <span class="font-semibold text-gray-700">98% Success Rate</span>
+                            <span class="font-semibold text-gray-700 text-sm sm:text-base">98% Success Rate</span>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center">
-                                <i class="fas fa-clock text-white text-sm"></i>
+                        <div class="flex items-center space-x-2">
+                            <div
+                                class="w-6 h-6 sm:w-8 sm:h-8 bg-accent-green rounded-full flex items-center justify-center">
+                                <i class="fas fa-clock text-white text-xs sm:text-sm"></i>
                             </div>
-                            <span class="font-semibold text-gray-700">Fast Certification</span>
+                            <span class="font-semibold text-gray-700 text-sm sm:text-base">Fast Certification</span>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center">
-                                <i class="fas fa-headset text-white text-sm"></i>
+                        <div class="flex items-center space-x-2">
+                            <div
+                                class="w-6 h-6 sm:w-8 sm:h-8 bg-accent-green rounded-full flex items-center justify-center">
+                                <i class="fas fa-headset text-white text-xs sm:text-sm"></i>
                             </div>
-                            <span class="font-semibold text-gray-700">24/7 Support</span>
+                            <span class="font-semibold text-gray-700 text-sm sm:text-base">24/7 Support</span>
                         </div>
                     </div>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
                         <a href="contact.html"
-                            class="group bg-brand-yellow text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-brand-yellow-dark transition-all duration-300 shadow-xl hover:shadow-2xl text-center">
-                            <span class="mr-3">Start Your Certification Journey</span>
+                            class="group bg-brand-yellow text-white px-6 py-4 sm:px-10 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:bg-brand-yellow-dark transition-all duration-300 shadow-xl hover:shadow-2xl text-center">
+                            <span class="mr-2 sm:mr-3">Start Your Certification Journey</span>
                             <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </a>
                         <a href="services.html"
-                            class="group border-2 border-brand-brown text-brand-brown px-10 py-5 rounded-xl font-bold text-lg hover:bg-brand-brown hover:text-white transition-all duration-300 text-center">
-                            <span class="mr-3">Explore Our Services</span>
+                            class="group border-2 border-brand-brown text-brand-brown px-6 py-4 sm:px-10 sm:py-5 rounded-xl font-bold text-base sm:text-lg hover:bg-brand-brown hover:text-white transition-all duration-300 text-center">
+                            <span class="mr-2 sm:mr-3">Explore Our Services</span>
                             <i class="fas fa-play group-hover:translate-x-1 transition-transform"></i>
                         </a>
                     </div>
 
                     <!-- Trust Indicators -->
-                    <div class="mt-12 pt-8 border-t border-gray-200">
-                        <p class="text-gray-800 mb-6 text-lg font-bold">Trusted by Industry Leaders:</p>
-                        <div class="flex flex-wrap items-center gap-6">
-                            <div class="bg-white px-6 py-4 rounded-xl shadow-md transition hover:shadow-lg">
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <p class="text-gray-800 mb-4 text-base sm:text-lg font-bold">Trusted by Industry Leaders:</p>
+                        <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                            <div
+                                class="bg-white px-4 py-3 rounded-xl shadow-md transition hover:shadow-lg text-sm sm:text-base">
                                 <span class="font-semibold text-gray-800">Textile Corp</span>
                             </div>
-                            <div class="bg-white px-6 py-4 rounded-xl shadow-md transition hover:shadow-lg">
+                            <div
+                                class="bg-white px-4 py-3 rounded-xl shadow-md transition hover:shadow-lg text-sm sm:text-base">
                                 <span class="font-semibold text-gray-800">Chemical Industries</span>
                             </div>
-                            <div class="bg-white px-6 py-4 rounded-xl shadow-md transition hover:shadow-lg">
+                            <div
+                                class="bg-white px-4 py-3 rounded-xl shadow-md transition hover:shadow-lg text-sm sm:text-base">
                                 <span class="font-semibold text-gray-800">Eco Textiles</span>
                             </div>
-                            <div class="bg-white px-6 py-4 rounded-xl shadow-md transition hover:shadow-lg">
+                            <div
+                                class="bg-white px-4 py-3 rounded-xl shadow-md transition hover:shadow-lg text-sm sm:text-base">
                                 <span class="font-semibold text-gray-800">Green Manufacturing</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Hero Image/Animation -->
                 <div class="animate-fade-in-right">
                     <div class="relative">
                         <!-- Main Card -->
-                        <div class="bg-white rounded-3xl shadow-2xl p-8 hover-lift">
-                            <div class="text-center mb-6">
+                        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 hover-lift">
+                            <div class="text-center mb-4 sm:mb-6">
                                 <div
-                                    class="w-24 h-24 bg-gradient-to-br from-brand-yellow to-brand-brown rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                                    <i class="fas fa-certificate text-white text-3xl"></i>
+                                    class="w-15 h-15 sm:w-20 sm:h-20 bg-gradient-to-br from-brand-yellow to-brand-brown rounded-2xl mx-auto mb-3 flex items-center justify-center">
+                                    <i class="fas fa-certificate text-white text-2xl sm:text-3xl"></i>
                                 </div>
-                                <h3 class="text-2xl font-bold text-brand-brown mb-2">Certification Dashboard</h3>
-                                <p class="text-gray-600">Real-time progress tracking</p>
+                                <h3 class="text-xl sm:text-2xl font-bold text-brand-brown mb-1">Certification Dashboard
+                                </h3>
+                                <p class="text-gray-600 text-sm">Real-time progress tracking</p>
                             </div>
 
                             <!-- Progress Bars -->
-                            <div class="space-y-4">
+                            <div class="space-y-3 sm:space-y-4">
                                 <div>
-                                    <div class="flex justify-between mb-2">
-                                        <span class="text-sm font-semibold text-gray-700">GOTS Certification</span>
-                                        <span class="text-sm text-brand-yellow font-bold">95%</span>
+                                    <div class="flex justify-between mb-1 text-sm">
+                                        <span class="font-semibold text-gray-700">GOTS Certification</span>
+                                        <span class="text-brand-yellow font-bold">95%</span>
                                     </div>
-                                    <div class="w-full bg-gray-200 rounded-full h-3">
-                                        <div class="bg-gradient-to-r from-brand-yellow to-brand-brown h-3 rounded-full"
+                                    <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                        <div class="bg-gradient-to-r from-brand-yellow to-brand-brown h-2 sm:h-3 rounded-full"
                                             style="width: 95%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between mb-2">
-                                        <span class="text-sm font-semibold text-gray-700">ZDHC Compliance</span>
-                                        <span class="text-sm text-brand-yellow font-bold">88%</span>
+                                    <div class="flex justify-between mb-1 text-sm">
+                                        <span class="font-semibold text-gray-700">ZDHC Compliance</span>
+                                        <span class="text-brand-yellow font-bold">88%</span>
                                     </div>
-                                    <div class="w-full bg-gray-200 rounded-full h-3">
-                                        <div class="bg-gradient-to-r from-brand-yellow to-brand-brown h-3 rounded-full"
+                                    <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                        <div class="bg-gradient-to-r from-brand-yellow to-brand-brown h-2 sm:h-3 rounded-full"
                                             style="width: 88%"></div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between mb-2">
-                                        <span class="text-sm font-semibold text-gray-700">ISO 14001</span>
-                                        <span class="text-sm text-accent-green font-bold">100%</span>
+                                    <div class="flex justify-between mb-1 text-sm">
+                                        <span class="font-semibold text-gray-700">ISO 14001</span>
+                                        <span class="text-accent-green font-bold">100%</span>
                                     </div>
-                                    <div class="w-full bg-gray-200 rounded-full h-3">
-                                        <div class="bg-accent-green h-3 rounded-full" style="width: 100%"></div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2 sm:h-3">
+                                        <div class="bg-accent-green h-2 sm:h-3 rounded-full" style="width: 100%"></div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Stats -->
-                            <div class="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-gray-100">
+                            <div class="grid grid-cols-3 gap-3 mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-100">
                                 <div class="text-center">
-                                    <div class="text-2xl font-bold text-brand-brown">500+</div>
+                                    <div class="text-lg sm:text-2xl font-bold text-brand-brown">500+</div>
                                     <div class="text-xs text-gray-600">Clients</div>
                                 </div>
                                 <div class="text-center">
-                                    <div class="text-2xl font-bold text-brand-brown">98%</div>
+                                    <div class="text-lg sm:text-2xl font-bold text-brand-brown">98%</div>
                                     <div class="text-xs text-gray-600">Success</div>
                                 </div>
                                 <div class="text-center">
-                                    <div class="text-2xl font-bold text-brand-brown">10+</div>
+                                    <div class="text-lg sm:text-2xl font-bold text-brand-brown">10+</div>
                                     <div class="text-xs text-gray-600">Years</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Floating Elements -->
+                        <!-- <div
+                            class="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-12 h-12 sm:w-16 sm:h-16 bg-accent-green rounded-2xl flex items-center justify-center shadow-xl animate-bounce-slow">
+                            <i class="fas fa-leaf text-white text-xl sm:text-2xl"></i>
+                        </div> -->
                         <div
-                            class="absolute -top-6 -right-6 w-20 h-20 bg-accent-green rounded-2xl flex items-center justify-center shadow-xl animate-bounce-slow">
-                            <i class="fas fa-leaf text-white text-2xl"></i>
-                        </div>
-                        <div
-                            class="absolute -bottom-6 -left-6 w-16 h-16 bg-brand-yellow rounded-xl flex items-center justify-center shadow-xl animate-pulse-slow">
-                            <i class="fas fa-award text-white text-xl"></i>
+                            class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-12 h-12 sm:w-16 sm:h-16 bg-brand-yellow rounded-xl flex items-center justify-center shadow-xl animate-pulse-slow">
+                            <i class="fas fa-award text-white text-lg sm:text-xl"></i>
                         </div>
                     </div>
                 </div>
@@ -343,12 +341,14 @@
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div class="w-6 h-10 border-2 border-brand-brown rounded-full flex justify-center">
-                <div class="w-1 h-3 bg-brand-brown rounded-full mt-2 animate-pulse"></div>
+        <div class="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-5 h-8 sm:w-6 sm:h-10 border-2 border-brand-brown rounded-full flex justify-center">
+                <div class="w-1 h-2 sm:h-3 bg-brand-brown rounded-full mt-1 sm:mt-2 animate-pulse"></div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Stats Counter Section -->
     <section class="py-20 bg-brand-brown-dark text-white relative overflow-hidden">
