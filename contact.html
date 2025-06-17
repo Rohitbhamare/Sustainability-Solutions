@@ -233,7 +233,8 @@
                 <!-- Contact Form -->
                 <div>
                     <h2 class="text-3xl font-bold text-brand-brown mb-8">Send Us a Message</h2>
-                    <form class="contact-form space-y-6" id="contactForm">
+                    <form class="contact-form space-y-6" id="contactForm" onsubmit="sendToWhatsApp(event)">
+
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name
@@ -348,7 +349,7 @@
 
                     <div class="space-y-8">
                         <!-- Office Address -->
-                        <div class="bg-gray-50 p-6 rounded-2xl">
+                        <!-- <div class="bg-gray-50 p-6 rounded-2xl">
                             <div class="flex items-start">
                                 <div class="w-12 h-12 bg-brand-yellow rounded-xl flex items-center justify-center mr-4">
                                     <i class="fas fa-map-marker-alt text-white"></i>
@@ -363,7 +364,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Phone Numbers -->
                         <div class="bg-gray-50 p-6 rounded-2xl">
@@ -422,7 +423,7 @@
     </section>
 
     <!-- Map Section -->
-    <section class="py-20 bg-gray-50">
+    <!-- <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-brand-brown mb-4">Find Our Office</h2>
@@ -448,7 +449,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- FAQ Section -->
     <section class="py-20 bg-white">
@@ -650,7 +651,7 @@
                 <div>
                     <h5 class="text-xl font-bold mb-6">Contact Information</h5>
                     <div class="space-y-4">
-                        <div class="flex items-start space-x-3">
+                        <!-- <div class="flex items-start space-x-3">
                             <i class="fas fa-map-marker-alt text-brand-yellow mt-1"></i>
                             <div>
                                 <p class="font-semibold">Head Office</p>
@@ -660,7 +661,7 @@
                                     Maharashtra 400069
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="flex items-center space-x-3">
                             <i class="fas fa-phone text-brand-yellow"></i>
                             <div>
@@ -799,6 +800,38 @@
             observer.observe(el);
         });
     </script>
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Stop the default form submission
+
+            // Collect form data
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const company = document.getElementById("company").value.trim();
+            const industry = document.getElementById("industry").value;
+            const service = document.getElementById("service").value;
+            const timeline = document.getElementById("timeline").value;
+            const message = document.getElementById("message").value.trim();
+
+            // Format the WhatsApp message
+            let text = `*New Inquiry from Website*\n\n`;
+            text += `*Name:* ${firstName} ${lastName}\n`;
+            text += `*Email:* ${email}\n`;
+            text += `*Phone:* ${phone}\n`;
+            text += `*Company:* ${company}\n`;
+            if (industry) text += `*Industry:* ${industry}\n`;
+            text += `*Service Required:* ${service}\n`;
+            if (timeline) text += `*Timeline:* ${timeline}\n`;
+            if (message) text += `*Message:* ${message}`;
+
+            // Encode and redirect to WhatsApp
+            const whatsappURL = `https://wa.me/918689939715?text=${encodeURIComponent(text)}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+
 </body>
 
 </html>
